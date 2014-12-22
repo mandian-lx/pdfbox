@@ -1,7 +1,9 @@
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           pdfbox
 Version:        1.8.7
-Release:        1%{?dist}
+Release:        1.1
 Summary:        Java library for working with PDF documents
+Group:		Development/Java
 License:        ASL 2.0
 URL:            http://pdfbox.apache.org/
 Source0:        http://www.apache.org/dist/pdfbox/%{version}/%{name}-%{version}-src.zip
@@ -18,7 +20,7 @@ BuildRequires:  maven-install-plugin
 BuildRequires:  maven-war-plugin
 BuildRequires:  apache-commons-logging
 BuildRequires:  apache-rat-plugin
-BuildRequires:  bitstream-vera-sans-fonts
+BuildRequires:  fonts-ttf-bitstream-vera
 BuildRequires:  bouncycastle-mail
 BuildRequires:  cobertura-maven-plugin
 BuildRequires:  fontconfig
