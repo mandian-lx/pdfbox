@@ -38,7 +38,7 @@ BuildRequires:  log4j12
 BuildArch:      noarch
 
 Requires:       java >= 1:1.6.0
-Requires:       bitstream-vera-sans-fonts
+Requires:       fonts-ttf-bitstream-vera
 
 Obsoletes:      %{name}-app <= 1.6.0-4
 Provides:       %{name}-app = %{version}-%{release}
