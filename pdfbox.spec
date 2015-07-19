@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           pdfbox
 Version:        1.8.7
-Release:        1.1
+Release:        1.2
 Summary:        Java library for working with PDF documents
 Group:		Development/Java
 License:        ASL 2.0
