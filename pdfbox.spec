@@ -14,7 +14,7 @@ Patch2:         pdfbox-1.8.11-port-to-bouncycastle1.50.patch
 
 BuildRequires:  bitstream-vera-sans-fonts
 BuildRequires:  fontconfig
-BuildRequires:  javapackages-tools >= 4.3.2-3
+BuildRequires:  javapackages-tools
 BuildRequires:  maven-local
 BuildRequires:  mvn(com.adobe.pdf:pcfi)
 BuildRequires:  mvn(com.ibm.icu:icu4j)
