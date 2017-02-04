@@ -12,7 +12,7 @@ Patch1:         %{name}-1.2.0-bitstream.patch
 
 Patch2:         pdfbox-1.8.11-port-to-bouncycastle1.50.patch
 
-BuildRequires:  bitstream-vera-sans-fonts
+BuildRequires:  fonts-ttf-bitstream-vera
 BuildRequires:  fontconfig
 BuildRequires:  javapackages-tools
 BuildRequires:  maven-local
