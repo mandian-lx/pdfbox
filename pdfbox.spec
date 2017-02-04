@@ -32,7 +32,7 @@ BuildRequires:  mvn(org.codehaus.mojo:javacc-maven-plugin)
 BuildArch:      noarch
 
 Requires:       java >= 1:1.6.0
-Requires:       bitstream-vera-sans-fonts
+Requires:       fonts-ttf-bitstream-vera
 
 %description
 Apache PDFBox is an open source Java PDF library for working with PDF
