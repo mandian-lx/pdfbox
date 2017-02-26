@@ -1,3 +1,5 @@
+%{?_javapackages_macros:%_javapackages_macros}
+
 Name:           pdfbox
 Version:        1.8.12
 Release:        1
