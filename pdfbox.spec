@@ -18,7 +18,7 @@ BuildRequires:  fonts-ttf-bitstream-vera
 BuildRequires:  fontconfig
 BuildRequires:  javapackages-tools
 BuildRequires:  maven-local
-BuildRequires:  mvn(com.adobe.pdf:pcfi)
+BuildRequires:  pcfi #mvn(com.adobe.pdf:pcfi)
 BuildRequires:  mvn(com.ibm.icu:icu4j)
 BuildRequires:  mvn(commons-logging:commons-logging)
 BuildRequires:  mvn(junit:junit)
