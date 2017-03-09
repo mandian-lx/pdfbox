@@ -131,10 +131,10 @@ sed -i 's/BUILD_PARSER=false/BUILD_PARSER=true/' preflight/src/main/javacc/pdf_e
 %pom_remove_plugin :cobertura-maven-plugin preflight
 %pom_remove_dep javax.activation:activation preflight
 
-%pom_change_dep :ant-nodeps :ant
-%pom_change_dep :ant-nodeps :ant pdfbox/
-%pom_change_dep :log4j ::1.2.17 preflight/
-%pom_change_dep :log4j ::1.2.17 preflight-app/
+#%pom_change_dep :ant-nodeps :ant
+#%pom_change_dep :ant-nodeps :ant pdfbox/
+#%pom_change_dep :log4j ::1.2.17 preflight/
+#%pom_change_dep :log4j ::1.2.17 preflight-app/
 
 #Fix line endings
 sed -i -e 's|\r||' RELEASE-NOTES.txt
