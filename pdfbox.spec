@@ -127,7 +127,6 @@ sed -i 's/BUILD_PARSER=false/BUILD_PARSER=true/' preflight/src/main/javacc/pdf_e
 
 %pom_remove_plugin :animal-sniffer-maven-plugin parent/
 %pom_remove_plugin :maven-deploy-plugin
-%pom_remove_plugin :maven-deploy-plugin parent/
 # cobertura-maven-plugin has been retired
 %pom_remove_plugin :cobertura-maven-plugin preflight
 %pom_remove_dep javax.activation:activation preflight
