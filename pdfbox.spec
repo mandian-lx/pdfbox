@@ -5,6 +5,7 @@ Version:        1.8.12
 Release:        1
 Summary:        Java library for working with PDF documents
 License:        ASL 2.0
+Group:          Development/Java
 URL:            http://pdfbox.apache.org/
 Source0:        http://www.apache.org/dist/pdfbox/%{version}/%{name}-%{version}-src.zip
 #Don't download anything
