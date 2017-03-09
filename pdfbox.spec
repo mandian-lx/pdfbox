@@ -142,15 +142,15 @@ sed -i -e 's|\r||' RELEASE-NOTES.txt
 #Remove META-INF file that does not exist
 
 #Use jdk15on version of bcprov
-%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 app/
-%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 preflight/
-%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 preflight-app/
-%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 examples/
-%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 pdfbox/
-%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 app/
-%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 preflight/
-%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 preflight-app/
-%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 pdfbox/
+sed -e -i 's|bcmail-jdk15|bcmail-jdk15on|g' app/pom.xml
+sed -e -i 's|bcmail-jdk15|bcmail-jdk15on|g' preflight/pom.xml
+sed -e -i 's|bcmail-jdk15|bcmail-jdk15on|g' preflight-app/pom.xml
+sed -e -i 's|bcmail-jdk15|bcmail-jdk15on|g' examples/pom.xml
+sed -e -i 's|bcmail-jdk15|bcmail-jdk15on|g' pdfbox/pom.xml
+sed -e -i 's|bcprov-jdk15|bcprov-jdk15on|g' app/pom.xml
+sed -e -i 's|bcprov-jdk15|bcprov-jdk15on|g' preflight/pom.xml
+sed -e -i 's|bcprov-jdk15|bcprov-jdk15on|g' preflight-app/pom.xml
+sed -e -i 's|bcprov-jdk15|bcprov-jdk15on|g' pdfbox/pom.xml
 %pom_add_dep org.bouncycastle:bcpkix-jdk15on:1.50 %{name}
 
 sed -i -e '/META-INF/d' pdfbox/pom.xml
