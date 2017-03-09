@@ -142,8 +142,15 @@ sed -i -e 's|\r||' RELEASE-NOTES.txt
 #Remove META-INF file that does not exist
 
 #Use jdk15on version of bcprov
-#%pom_change_dep -r :bcmail-jdk15 :bcmail-jdk15on:1.50
-#%pom_change_dep -r :bcprov-jdk15 :bcprov-jdk15on:1.50
+%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 app/
+%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 preflight/
+%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 preflight-app/
+%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 examples/
+%pom_change_dep :bcmail-jdk15 :bcmail-jdk15on:1.50 pdfbox/
+%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 app/
+%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 preflight/
+%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 preflight-app/
+%pom_change_dep :bcprov-jdk15 :bcprov-jdk15on:1.50 pdfbox/
 %pom_add_dep org.bouncycastle:bcpkix-jdk15on:1.50 %{name}
 
 sed -i -e '/META-INF/d' pdfbox/pom.xml
