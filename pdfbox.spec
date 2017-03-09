@@ -125,14 +125,17 @@ sed -i 's/BUILD_PARSER=false/BUILD_PARSER=true/' preflight/src/main/javacc/pdf_e
 %pom_disable_module preflight-app
 %pom_disable_module app
 
-%pom_remove_plugin -r :animal-sniffer-maven-plugin
-%pom_remove_plugin -r :maven-deploy-plugin
+%pom_remove_plugin :animal-sniffer-maven-plugin parent/
+%pom_remove_plugin :maven-deploy-plugin
+%pom_remove_plugin :maven-deploy-plugin parent/
 # cobertura-maven-plugin has been retired
 %pom_remove_plugin :cobertura-maven-plugin preflight
 %pom_remove_dep javax.activation:activation preflight
 
-%pom_change_dep -r :ant-nodeps :ant
-%pom_change_dep -r :log4j ::1.2.17
+%pom_change_dep :ant-nodeps :ant
+%pom_change_dep :ant-nodeps :ant pdfbox/
+%pom_change_dep :log4j ::1.2.17 preflight/
+%pom_change_dep :log4j ::1.2.17 preflight-app/
 
 #Fix line endings
 sed -i -e 's|\r||' RELEASE-NOTES.txt
